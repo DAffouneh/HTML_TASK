@@ -41,10 +41,13 @@ $('.message a').click(function(){
     {
         var user = document.getElementById("user").value;
         var pass = document.getElementById("pass").value;
+        var queryString = "?" + user; 
+
         if(pass=="hello"&&user=="Dania")
         {
-            
-        window.location.href="page2.html";
+            console.log(window.location)
+
+      window.location.href="home.html"+ queryString;
 
         }
         else
